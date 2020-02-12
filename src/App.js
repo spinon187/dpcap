@@ -1,7 +1,12 @@
 import React, {Component} from 'react';
-import './App.css';
-import {Nav, Landing, Platform, Background, Join} from './components';
+// import './App.css';
+import Nav from './components/Nav';
+import Landing from './components/Landing';
+import Platform from './components/Platform';
+import Background from './components/Background';
+import Join from './components/Join';
 import styled from 'styled-components';
+import {green, gray, white} from './components/Colors';
 import { Route } from 'react-router-dom';
 
 
@@ -16,6 +21,7 @@ export default class App extends Component {
   render() {
     return (
       <AppBox>
+        <header>Dallas People's Climate Action Plan</header>
         <Nav />
         <div className='body-box'>
           <Route exact path='/' component={Landing}/>
@@ -28,6 +34,8 @@ export default class App extends Component {
   }
 }
 
+
+
 const AppBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -38,6 +46,17 @@ const AppBox = styled.div`
   @media(max-width: 640px){
     max-width: 640px
   }
+  font-family: 'Source Sans Pro', sans-serif;
+  header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 2rem;
+    margin: auto;
+    background-color: ${green};
+    color: ${white};
+    padding: 1rem 0;
+  }
   .body-box{
     max-width: 900px;
     min-width: 900px; //remember to fix
@@ -46,17 +65,12 @@ const AppBox = styled.div`
     height: 90rem;
     min-height: 100vh;
     overflow-y: hidden;
-    // background-image: linear-gradient(to bottom right, #DEDEDE, #5F5F5F);
-    // overflow-x: hidden;
-    // border: 3px solid #5F5F5F;
-    // border-radius: 12px;
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
     line-height: 4.5rem;
     font-size: 3.5rem;
-    color: white;
-    font-family: 'Staatliches', cursive;
+    
     // z-index: -1;
     @media(max-width: 640px){
       max-width: 640px;
