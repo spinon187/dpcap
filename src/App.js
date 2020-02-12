@@ -50,12 +50,20 @@ const AppBox = styled.div`
   header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     font-size: 2rem;
+    text-align: center;
     margin: auto;
     background-color: ${green};
     color: ${white};
     padding: 1rem 0;
+    @media(max-width: 640px){
+      flex-direction: column;
+      align-items: center;
+      padding-left: 7%;
+      padding-right: 7%;
+    }
   }
   .body-box{
     max-width: 900px;
