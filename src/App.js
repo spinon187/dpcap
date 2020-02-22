@@ -48,7 +48,7 @@ const AppBox = styled.div`
   margin: auto;
   min-width: 98.7vw;
   min-height: 90rem;
-  max-height: 100vh;
+  // max-height: 100vh;
   @media(max-width: 640px){
     max-width: 640px
   }
@@ -90,7 +90,7 @@ const AppBox = styled.div`
     // min-width: 900px; //remember to fix
     margin: auto;
     display: flex;
-    height: 90rem;
+    // height: 90rem;
     min-height: 100vh;
     overflow-y: hidden;
     flex-direction: column;
