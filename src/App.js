@@ -47,7 +47,7 @@ const AppBox = styled.div`
   flex-direction: column;
   margin: auto;
   min-width: 98.7vw;
-  min-height: 90rem;
+  // min-height: 90rem;
   // max-height: 100vh;
   @media(max-width: 640px){
     max-width: 640px
@@ -96,8 +96,8 @@ const AppBox = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 1rem;
-    line-height: 4.5rem;
-    font-size: 3.5rem;
+    // line-height: 4.5rem;
+    // font-size: 3.5rem;
     
     // z-index: -1;
     @media(max-width: 640px){
