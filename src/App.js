@@ -21,8 +21,14 @@ export default class App extends Component {
   render() {
     return (
       <AppBox>
-        <header>Dallas People's Climate Action Plan</header>
-        <Nav />
+        <header>
+          <div>
+            <h1>DPCAP</h1>
+            <h2>Dallas People's Climate Action Plan</h2>
+          </div>
+          <Nav />
+        </header>
+        
         <div className='body-box'>
           <Route exact path='/' component={Landing}/>
           <Route path='/platform' component={Platform} />
@@ -49,15 +55,29 @@ const AppBox = styled.div`
   font-family: 'Source Sans Pro', sans-serif;
   header {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    // align-items: center;
     width: 100%;
     font-size: 2rem;
-    text-align: center;
+    // text-align: center;
     margin: auto;
-    background-color: ${green};
-    color: ${white};
-    padding: 1rem 0;
+    background-color: ${white};
+    color: ${green};
+    padding: 3rem;
+    padding-bottom: 0;
+    h1 {
+      font-weight: bold;
+      font-size: 2.4rem;
+      letter-spacing: .3rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+      letter-spacing: .25rem;
+    }
+    nav {
+      width: 35%;
+      font-size: 1rem;
+    }
     @media(max-width: 640px){
       flex-direction: column;
       align-items: center;
@@ -66,8 +86,8 @@ const AppBox = styled.div`
     }
   }
   .body-box{
-    max-width: 900px;
-    min-width: 900px; //remember to fix
+    // max-width: 900px;
+    // min-width: 900px; //remember to fix
     margin: auto;
     display: flex;
     height: 90rem;
@@ -75,7 +95,7 @@ const AppBox = styled.div`
     overflow-y: hidden;
     flex-direction: column;
     align-items: center;
-    padding-top: 3rem;
+    padding-top: 1rem;
     line-height: 4.5rem;
     font-size: 3.5rem;
     

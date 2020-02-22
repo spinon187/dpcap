@@ -6,10 +6,10 @@ import {green, gray, white} from './Colors';
 const Nav = props => {
   return(
     <NavBox>
-      <NavLink exact to='/' activeClassName='activeNav'>Home</NavLink>
-      <NavLink to='/about' activeClassName='activeNav'>About</NavLink>
-      <NavLink to='/platform' activeClassName='activeNav'>Platform</NavLink>
-      <NavLink to='/join' activeClassName='activeNav'>Join Us</NavLink>
+      <NavLink exact to='/' activeClassName='activeNav'>HOME/ABOUT</NavLink>
+      {/* <NavLink to='/about' activeClassName='activeNav'>About</NavLink> */}
+      <NavLink to='/platform' activeClassName='activeNav'>PLATFORM</NavLink>
+      <NavLink to='/join' activeClassName='activeNav'>JOIN US</NavLink>
     </NavBox>
   )
 }
@@ -17,17 +17,18 @@ const Nav = props => {
 const NavBox = styled.nav`
   display: flex;
   justify-content: space-around;
-  width: 100%;
-  background-color: ${green};
+  align-items: center;
+  // width: 35%;
+  background-color: ${white};
   padding: 1rem 0;
   a {
     text-decoration: none;
-    color: ${gray};
+    color: ${green};
     font-family: 'Source Sans Pro', sans-serif;
 
   }
   .activeNav {
-    color: ${white}
+    font-weight: bold;
   }
 `
 
