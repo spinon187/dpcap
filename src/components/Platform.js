@@ -12,18 +12,18 @@ const Platform = props => {
       <h2>Environmental Justice & Equity</h2>
       <br />
       Community Decision Making
-      <br />
-      <span className='indent'/>1.<span className='indent'/>Structurally empower community members to hold the city accountable
-      <br />
-      <span className='indent'/><span className='indent'/>a.<span className='indent'/>Restore the Dallas Environmental Health Commission to provide oversight of the City’s implementation of policies related to public health, the environment, and climate action plan.
-      <br />
-      <span className='indent'/>2.<span className='indent'/>Mobilize local coalitions in order to develop community-based solutions
-      <br />
-      <span className='indent'/><span className='indent'/>a.<span className='indent'/>Create a city staff position within the Office of Environmental Quality and Sustainability focused on community engagement and mapping community assets that can support community climate resilience.
-      <br />
-      <span className='indent'/><span className='indent'/>b.<span className='indent'/>Identify, seek, and invest resources to realize and support long-term independence of community-based climate solutions and initiatives.
-      <br />
-      <span className='indent'/><span className='indent'/>c.<span className='indent'/>Invest in building community capacity to ensure effective implementation andequitable outcomes of climate efforts.
+
+      <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Structurally empower community members to hold the city accountable</div></div>
+
+      <div className='sub'><span className='indent'/><span className='indent'/>a.<span className='indent'/><div className='textbox'>Restore the Dallas Environmental Health Commission to provide oversight of the City’s implementation of policies related to public health, the environment, and climate action plan.</div></div>
+
+      <div className='sub'><span className='indent'/>2.<span className='indent'/><div className='textbox'>Mobilize local coalitions in order to develop community-based solutions</div></div>
+
+      <div className='sub'><span className='indent'/><span className='indent'/>a.<span className='indent'/><div className='textbox'>Create a city staff position within the Office of Environmental Quality and Sustainability focused on community engagement and mapping community assets that can support community climate resilience.</div></div>
+
+      <div className='sub'><span className='indent'/><span className='indent'/>b.<span className='indent'/><div className='textbox'>Identify, seek, and invest resources to realize and support long-term independence of community-based climate solutions and initiatives.</div></div>
+
+      <div className='sub'><span className='indent'/><span className='indent'/>c.<span className='indent'/><div className='textbox'>Invest in building community capacity to ensure effective implementation andequitable outcomes of climate efforts.</div></div>
       <br />
       Environmental Justice & Zoning
       <br />
@@ -246,6 +246,8 @@ const Platform = props => {
 
 const PlatformBox = styled.div`
   padding: 2rem;
+  background: ${green};
+  color: ${white};
   .indent {
     padding-right: 2rem;
   }
@@ -265,6 +267,12 @@ const PlatformBox = styled.div`
   h2 {
     font-weight: bold;
     padding: 1rem 0;
+  }
+  .sub {
+    display: flex;
+  }
+  .subsub {
+    padding-right: 2rem;
   }
 `
 
