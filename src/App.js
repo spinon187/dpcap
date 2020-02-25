@@ -56,10 +56,8 @@ const AppBox = styled.div`
   header {
     display: flex;
     justify-content: space-between;
-    // align-items: center;
     width: 100%;
     font-size: 2rem;
-    // text-align: center;
     margin: auto;
     background-color: ${white};
     color: ${green};
@@ -69,40 +67,44 @@ const AppBox = styled.div`
       font-weight: bold;
       font-size: 2.4rem;
       letter-spacing: .3rem;
+      @media(max-width: 640px){
+        font-size: 1.8rem;
+      }
     }
     h2 {
       font-size: 1.8rem;
       letter-spacing: .25rem;
+      @media(max-width: 640px){
+        font-size: 1.4rem;
+      }
     }
     nav {
       width: 35%;
       font-size: 1rem;
+      @media(max-width: 640px){
+        width: 100%;
+      }
     }
     @media(max-width: 640px){
       flex-direction: column;
       align-items: center;
-      padding-left: 7%;
-      padding-right: 7%;
+      padding: 1rem;
+      padding-bottom: 0;
     }
   }
   .body-box{
-    // max-width: 900px;
-    // min-width: 900px; //remember to fix
     margin: auto;
     display: flex;
-    // height: 90rem;
     min-height: 100vh;
     overflow-y: hidden;
     flex-direction: column;
-    align-items: center;
-    padding-top: 1rem;
-    // line-height: 4.5rem;
-    // font-size: 3.5rem;
-    
+    // align-items: center;
+    padding-top: 1rem;    
     // z-index: -1;
     @media(max-width: 640px){
       max-width: 640px;
       min-width: 98.7vw;
+      padding-top: 0;
     }
   }
 `
