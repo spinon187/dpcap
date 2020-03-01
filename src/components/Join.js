@@ -1,15 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 import {green, white, gray} from './Colors';
-import dsaImg from '../img/dsantx_logo_placeholder.png';
+import dsaImg from '../img/square/dsantx_logo.png';
 import treeFiddy from '../img/square/dallas350.svg';
-import dga from '../img/dga.png';
-import gntx from '../img/gntx.png';
-import jwj from '../img/jwj.jpg';
-import nttr from '../img/nttr.png';
-import sunrise from '../img/sunrise.jpg';
-import tce from '../img/tce.jpg';
-import vfp from '../img/vfp.jpg';
+import dga from '../img/square/dga.png';
+import gntx from '../img/square/gntx.png';
+import jwj from '../img/square/jwj.png';
+import nttr from '../img/square/nttr.png';
+import sunrise from '../img/square/sunrise.png';
+import tce from '../img/square/tce.png';
+import vfp from '../img/square/vfp.png';
 
 const orgPics = [dsaImg, treeFiddy, dga, gntx, jwj, nttr, sunrise, tce, vfp];
 
@@ -34,22 +34,29 @@ function OrgPic(props){
 }
 
 //this function should display all org pics
-function OrgChart(props){
+function OrgChart(o){
 	const imgPerRow = 3;
 	const windowWidth = window.innerWidth;
+	console.log(windowWidth);
 	const windowHeight = window.innerHeight;
 	var orgList = [];
 	var imgWidth = 0.8*(windowWidth/imgPerRow)
-	return(
-		orgs.map((e,i) =>
-			<img src={e.photo}
-			text = {e.text}
-			width={imgWidth}
-			class="a"
-			key={i}
-			/>
-		)
-	);
+	//for (var i = 0; i<orgPics.length/3; i++){
+		return(
+			<div className="grid">
+			{o.map((e,i) =>
+				<img src={e.photo}
+				text = {e.text}
+				width={imgWidth}
+				height={imgWidth}
+				class="a"
+				key={i}
+				style={{padding: "20px"}}
+				/>
+			)}
+			</div>
+		);
+	
 }
 
 function GetImageWidth(props){
@@ -65,13 +72,12 @@ const Join = props => {
     	<div>
     	<h1>Dallas People’s Climate Action Coalition Members</h1>
     	<RandomText text="test"/>
-    	<OrgChart/>
+    	{OrgChart(orgs)}
     	<br />
     	<br />
     	</div>
-
-    	<div style={{width: 800}}>
-	    	<h1>Join Us</h1>
+    	<h1>Join Us</h1>
+    	<div className="joinusblock">
 	    	<div style={{width: 300}}>
 		    	<h2>Are you a volunteer</h2>
 		    	If you want to volunteer to help us improve the DPCAP, contact us at:
@@ -130,6 +136,17 @@ padding: 2rem;
     @media(max-width: 640px){
       padding-right: .7rem;
     }
+  }
+  .joinusblock {
+  	display: flex;
+  	justify-content: space-around;
+  	// padding: 0 15%;
+  	width: 100%;
+  }
+  .grid {
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-around;
   }
 `
 
