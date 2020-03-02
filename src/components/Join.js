@@ -71,22 +71,31 @@ const Join = props => {
     <JoinBox>
     	<div>
     	<h1>Dallas People’s Climate Action Coalition Members</h1>
-    	<RandomText text="test"/>
     	{OrgChart(orgs)}
     	<br />
     	<br />
     	</div>
     	<h1>Join Us</h1>
     	<div className="joinusblock">
-	    	<div style={{width: 300}}>
-		    	<h2>Are you a volunteer</h2>
-		    	If you want to volunteer to help us improve the DPCAP, contact us at:
-		    	volunteer@dallaspcap.com
+	    	<div style={{width: 500}}>
+		    	<h2>As a Volunteer</h2>
+		    	<p>
+		    	Want to get more involved? We are looking for volunteers to help us coordinate actions & events, create digital media, canvass communities to raise awareness, meet with City staff and council people, and much more!
+				</p>
+				<br />
+				<p>
+				Be a part of our movement by emailing <u>volunteer@dallaspcap.com</u>.
+				</p>
 			</div>
-    		<div style={{width: 300}}>
+    		<div style={{width: 500}}>
 		    	<h2>Are you a organization interested in joining the coalition?</h2>
-		    	If you represent an orginzation that is interested in supporting the Dallas People's Climate Action Plan, contatct us at:
-		    	join@dallaspcap.com
+		    	<p>
+		    	Are you part of an organization that is willing to fight for a democratic, equitable, and just climate plan that puts the wellbeing of the people and planet above profits? We are looking for organizations that will endorse the Dallas People’s Climate Action Plan and support our efforts in pressuring the City of Dallas to adopt our climate actions.
+		    	</p>
+		    	<br />
+		    	<p>
+				Join the DPCAP coalition by emailing <u>join@dallaspcap.com</u>.
+	    		</p>
 	    	</div>
     	</div>
     </JoinBox>
