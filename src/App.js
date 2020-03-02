@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 // import './App.css';
 import Nav from './components/Nav';
 import Landing from './components/Landing';
-import AboutUs from './components/AboutUs'
+import AboutUs from './components/Join';
 import Platform from './components/Platform';
 import Background from './components/Background';
 import Join from './components/Join';
