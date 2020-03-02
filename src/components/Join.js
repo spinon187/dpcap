@@ -88,7 +88,7 @@ const Join = props => {
 				</p>
 			</div>
     		<div style={{width: 500}}>
-		    	<h2>Are you a organization interested in joining the coalition?</h2>
+		    	<h2>As an Coalition Partner</h2>
 		    	<p>
 		    	Are you part of an organization that is willing to fight for a democratic, equitable, and just climate plan that puts the wellbeing of the people and planet above profits? We are looking for organizations that will endorse the Dallas People’s Climate Action Plan and support our efforts in pressuring the City of Dallas to adopt our climate actions.
 		    	</p>
@@ -151,6 +151,7 @@ padding: 2rem;
   	justify-content: space-around;
   	// padding: 0 15%;
   	width: 100%;
+  	text-align : center
   }
   .grid {
   	display: flex;
