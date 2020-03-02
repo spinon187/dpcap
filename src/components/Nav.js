@@ -6,8 +6,8 @@ import {green, gray, white} from './Colors';
 const Nav = props => {
   return(
     <NavBox>
-      <NavLink exact to='/' activeClassName='activeNav'>HOME/ABOUT</NavLink>
-      {/* <NavLink to='/about' activeClassName='activeNav'>About</NavLink> */}
+      <NavLink exact to='/' activeClassName='activeNav'>HOME</NavLink>
+      <NavLink to='/about' activeClassName='activeNav'>ABOUT</NavLink>
       <NavLink to='/platform' activeClassName='activeNav'>PLATFORM</NavLink>
       <NavLink to='/join' activeClassName='activeNav'>JOIN US</NavLink>
     </NavBox>
