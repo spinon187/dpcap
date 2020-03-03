@@ -5,7 +5,7 @@ import {green, white, gray} from './Colors';
 const Background = props => {
   return(
     <BackgroundBox>
-    <h1> About Us</h1>
+    <h1 id='about-us'> About Us</h1>
     <br />
     <h2>Who We Are</h2>
     <p>We are a coalition of like-minded local organizations who are concerned that the official climate action plan commissioned by the City of Dallas is not enough to address climate change in an adequate, equitable, and just way. The founding organizations of the coalition are: the Democratic Socialists of America North Texas Ecosocialist Working Group, Texas Campaign for the Environment, and the Dallas Sunrise Movement.
@@ -40,7 +40,7 @@ const Background = props => {
 		<br />
 		<li><p>7. Options Real Estate: Real estate firms take advantage of climate change actions to push out low-income communities and gentrify their land after public entities clean up toxic waste sites and unhealthy conditions. </p></li>
 		<br />
-		<li><p>8.Oncor: Oncor has a monopoly on power distribution in Dallas.</p></li>
+		<li><p>8. Oncor: Oncor has a monopoly on power distribution in Dallas.</p></li>
 	</ol>
 	<br />
 	<p>The Stakeholder Advisory Committee has held 5 meetings to discuss their interests in the CECAP. Why do the businesses with clear conflicts of interest have a bigger voice than you when it comes to climate change?</p>
