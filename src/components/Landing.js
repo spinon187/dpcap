@@ -258,6 +258,13 @@ const LandingBox = styled.div`
         font-weight: bold;
       }
       padding-left: 3rem;
+      @media(max-width: 640px){
+        margin-right: 1rem;
+        margin-left: 1rem;
+        border: none;
+        line-height: 1.2rem;
+        padding: 0;
+      }
     }
     div {
       margin-bottom: 1rem;
@@ -267,10 +274,15 @@ const LandingBox = styled.div`
       margin: -3.5rem 10rem 0 3rem;
       padding-top: 5rem;
       @media(max-width: 640px){
-        margin-right: 0;
+        margin-right: 1rem;
         margin-left: 1rem;
         border: none;
         line-height: 1.2rem;
+      }
+    }
+    .overview-sub-box {
+      @media(max-width: 640px){
+        flex-direction: column;
       }
     }
   }
