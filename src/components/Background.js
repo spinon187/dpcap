@@ -22,7 +22,7 @@ const Background = props => {
 	</p>
 	<br />
 	<p>
-	Lack of any meaningful public engagement aside, the developers of the CECAP overwhelmingly prioritized businesses interests over community advocacy groups, academic institutions, health organizations, and even government entities. This bias is evident in the composition of the Stakeholder Advisory Committee: 17 businesses were included in the stakeholders, compared to 12 advocacy/community groups, 3 university/colleges, 5 health organizations, and 3 government entities. In that list of 17 businesses in the Stakeholder Advisory Committee, 9 of those businesses (more than half) have a clear conflict of interest in the development of a climate plan. Those 9 businesses are:
+	Lack of any meaningful public engagement aside, the developers of the CECAP overwhelmingly prioritized businesses interests over community advocacy groups, academic institutions, health organizations, and even government entities. This bias is evident in the composition of the Stakeholder Advisory Committee: 17 businesses were included in the stakeholders, compared to 12 advocacy/community groups, 3 university/colleges, 5 health organizations, and 3 government entities. In that list of 17 businesses in the Stakeholder Advisory Committee, 8 of those businesses (about half) have a clear conflict of interest in the development of a climate plan. Those 8 businesses are:
 	</p>
 	<br />
 	<ol className="lista">
@@ -38,11 +38,9 @@ const Background = props => {
 		<br />
 		<li><p>6. Apartment Association of Greater Dallas </p></li>
 		<br />
-		<li><p>7. Options Real Estate </p></li>
+		<li><p>7. Options Real Estate: Real estate firms take advantage of climate change actions to push out low-income communities and gentrify their land after public entities clean up toxic waste sites and unhealthy conditions. </p></li>
 		<br />
-		<li><p>8. Lyda Hill Philanthropies: Real estate firms take advantage of climate change actions to push out low-income communities and gentrify their land after public entities clean up toxic waste sites and unhealthy conditions.</p></li>
-		<br />
-		<li><p>9.Oncor: Oncor has a monopoly on power distribution in Dallas.</p></li>
+		<li><p>8.Oncor: Oncor has a monopoly on power distribution in Dallas.</p></li>
 	</ol>
 	<br />
 	<p>The Stakeholder Advisory Committee has held 5 meetings to discuss their interests in the CECAP. Why do the businesses with clear conflicts of interest have a bigger voice than you when it comes to climate change?</p>
