@@ -104,7 +104,8 @@ const AppBox = styled.div`
     // z-index: -1;
     @media(max-width: 640px){
       max-width: 640px;
-      min-width: 98.7vw;
+      // width: 100%;
+      // min-width: 98.7vw;
       padding-top: 0;
     }
   }

@@ -49,7 +49,7 @@ function OrgChart(o){
 				text = {e.text}
 				width={imgWidth}
 				height={imgWidth}
-				class="a"
+				className="a"
 				key={i}
 				style={{padding: "20px"}}
 				/>

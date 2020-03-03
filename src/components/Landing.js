@@ -171,7 +171,7 @@ const LandingBox = styled.div`
   @media(max-width: 640px){
     font-size: 1rem;
     line-height: 1.4rem;
-    padding: 1rem;
+    // padding: 1rem;
   }
   line-height: 2rem;
   h1 {
@@ -198,6 +198,14 @@ const LandingBox = styled.div`
       cursor: pointer;
       font-weight: bold;
     }
+    @media(max-width: 640px){
+      font-size: 1rem;
+      letter-spacing: 0;
+      text-align: center;
+      margin: 0 1rem;
+      padding: 1rem;
+      display: block;
+    }
   }
   h2 {
     font-weight: bold;
@@ -207,6 +215,9 @@ const LandingBox = styled.div`
     font-style: italic;
     font-weight: bold;
     text-align: center;
+    @media(max-width: 640px){
+      font-size: 1.6rem;
+    }
   }
   .sub {
     display: flex;
@@ -221,6 +232,9 @@ const LandingBox = styled.div`
     padding-top: 4.8rem;
     background-image: url(${strike});
     background-size: 100%;
+    @media(max-width: 640px){
+      background-size: cover;
+    }
     display: flex;
     flex-direction: column;
     .overview-sub-box {
@@ -233,6 +247,9 @@ const LandingBox = styled.div`
       font-size: 2rem;
       padding: 1rem 0 1rem 0rem;
       line-height: 2.4rem;
+      @media(max-width: 640px){
+        font-size: 1rem;
+      }
     }
     a {
       text-decoration: underline;
@@ -249,15 +266,28 @@ const LandingBox = styled.div`
       border-top: 2px solid ${green};
       margin: -3.5rem 10rem 0 3rem;
       padding-top: 5rem;
+      @media(max-width: 640px){
+        margin-right: 0;
+        margin-left: 1rem;
+        border: none;
+        line-height: 1.2rem;
+      }
     }
   }
   .why-box {
     background-image: url(${img2});
     background-size: 100% 100%;
     padding: 3rem;
+    @media(max-width: 640px){
+      padding: 1rem;
+    }
     p {
       font-size: 1.8rem;
       padding: 0 3rem;
+      @media(max-width: 640px){
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
     }
     display: flex;
     flex-direction: column;
