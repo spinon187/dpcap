@@ -49,7 +49,7 @@ function OrgChart(o){
 				text = {e.text}
 				width={imgWidth}
 				height={imgWidth}
-				class="a"
+				className="a"
 				key={i}
 				style={{padding: "20px"}}
 				/>
@@ -77,7 +77,7 @@ const Join = props => {
     	</div>
     	<h1>Join Us</h1>
     	<div className="joinusblock">
-	    	<div style={{width: 500}}>
+	    	<div>
 		    	<h2>As a Volunteer</h2>
 		    	<p>
 		    	Want to get more involved? We are looking for volunteers to help us coordinate actions & events, create digital media, canvass communities to raise awareness, meet with City staff and council people, and much more!
@@ -87,7 +87,7 @@ const Join = props => {
 				Be a part of our movement by emailing <u>volunteer@dallaspcap.com</u>.
 				</p>
 			</div>
-    		<div style={{width: 500}}>
+    		<div>
 		    	<h2>As an Coalition Partner</h2>
 		    	<p>
 		    	Are you part of an organization that is willing to fight for a democratic, equitable, and just climate plan that puts the wellbeing of the people and planet above profits? We are looking for organizations that will endorse the Dallas People’s Climate Action Plan and support our efforts in pressuring the City of Dallas to adopt our climate actions.
@@ -150,14 +150,34 @@ padding: 2rem;
   	display: flex;
   	justify-content: space-around;
   	// padding: 0 15%;
-  	width: 100%;
-  	text-align : center
+		width: 100%;
+		div {
+			max-width: 500px;
+		}
+		text-align: center;
+		@media(max-width: 640px){
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			div {
+				width: 100%;
+			}
+			p {
+				text-align: left;
+			}
+    }
   }
   .grid {
   	display: flex;
   	flex-wrap: wrap;
   	justify-content: space-around;
-  }
+	}
+	// img {
+	// 	@media(max-width: 640px){
+	// 		width: 20%;
+	// 		height: 20%;
+  //   }
+	// }
 `
 
 export default Join;

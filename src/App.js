@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 // import './App.css';
 import Nav from './components/Nav';
 import Landing from './components/Landing';
-import AboutUs from './components/AboutUs'
+// import AboutUs from './components/AboutUs';
 import Platform from './components/Platform';
 import Background from './components/Background';
 import Join from './components/Join';
 import styled from 'styled-components';
-import {green, gray, white} from './components/Colors';
+import {green, white} from './components/Colors';
 import { Route } from 'react-router-dom';
 
 
@@ -62,18 +62,18 @@ const AppBox = styled.div`
     margin: auto;
     background-color: ${white};
     color: ${green};
-    padding: 3rem;
-    padding-bottom: 0;
+    padding: 1.5rem 5rem 1.4rem;
+    // padding-bottom: 0;
     h1 {
       font-weight: bold;
-      font-size: 2.4rem;
+      font-size: 3.2rem;
       letter-spacing: .3rem;
       @media(max-width: 640px){
         font-size: 1.8rem;
       }
     }
     h2 {
-      font-size: 1.8rem;
+      font-size: 2.4rem;
       letter-spacing: .25rem;
       @media(max-width: 640px){
         font-size: 1.4rem;
@@ -104,7 +104,8 @@ const AppBox = styled.div`
     // z-index: -1;
     @media(max-width: 640px){
       max-width: 640px;
-      min-width: 98.7vw;
+      // width: 100%;
+      // min-width: 98.7vw;
       padding-top: 0;
     }
   }
