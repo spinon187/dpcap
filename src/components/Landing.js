@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import cta from '../img/ctapng.png';
+import cta from '../img/cta.png';
 import {green, white, gray} from './Colors';
 import strike from '../img/IMG_2115-global-climate-strike.jpg';
 import img2 from '../img/img2.png';
