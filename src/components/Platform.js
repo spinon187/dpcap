@@ -9,8 +9,8 @@ const Platform = props => {
       <br />
       <h3>Updated & Finalized 2/16/20</h3>
       <br />
-      <h2>Community Decision Making</h2>
-      <p>The most important question in the face of climate change is not “Do we believe it’s real?” but “Who gets to decide what we will do?”. We can’t afford to let our response to climate change be controlled by a wealthy and powerful few, who have more concern for maintaining their profits and privilege than the lives of the working class. The Dallas Climate Plan must be democratically accountable to all Dallas residents and Dallas communities. </p>
+      <h2 id='community-decision-making'>Community Decision Making</h2>
+      {/* <p>The most important question in the face of climate change is not “Do we believe it’s real?” but “Who gets to decide what we will do?”. We can’t afford to let our response to climate change be controlled by a wealthy and powerful few, who have more concern for maintaining their profits and privilege than the lives of the working class. The Dallas Climate Plan must be democratically accountable to all Dallas residents and Dallas communities. </p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Structurally empower community members to hold the city accountable</div></div>
 
@@ -24,8 +24,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>c.<span className='indent'/><div className='textbox'>Invest in building community capacity to ensure effective implementation andequitable outcomes of climate efforts.</div></div>
 
-      <h2>Environmental Justice & Zoning</h2>
-      <p>A history of irresponsible zoning practices has left many communities, all too often poor neighborhoods and communities of color, dealing with toxic waste sites and polluting facilities near their homes. Any economic development or zoning process must be pursued through the lens of social and environmental equity to ensure that all residents can maintain quality of life. </p>
+      <h2 id='environmental-justice-zoning'>Environmental Justice & Zoning</h2>
+      {/* <p>A history of irresponsible zoning practices has left many communities, all too often poor neighborhoods and communities of color, dealing with toxic waste sites and polluting facilities near their homes. Any economic development or zoning process must be pursued through the lens of social and environmental equity to ensure that all residents can maintain quality of life. </p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Invest in the health and safety of communities across Dallas by addressing existing environmental racism within the city</div></div>
 
@@ -59,8 +59,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>b.<span className='indent'/><div className='textbox'>Include permit and zoning regulation checks as part of code compliance visits.</div></div>
 
-      <h2>Disaster Response</h2>
-      <p>With climate change comes more erratic and extreme weather patterns — circumstances like the four year drought followed by flash flooding in 2015, increasingly hotter summers, and severe storms are predicted to become more frequent in Dallas. The city must develop a comprehensive plan to ensure the safety and well being of all its residents during such extreme weather events.</p>
+      <h2 id='disaster-response'>Disaster Response</h2>
+      {/* <p>With climate change comes more erratic and extreme weather patterns — circumstances like the four year drought followed by flash flooding in 2015, increasingly hotter summers, and severe storms are predicted to become more frequent in Dallas. The city must develop a comprehensive plan to ensure the safety and well being of all its residents during such extreme weather events.</p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Prepare communities for climate change by ensuring every resident’s access to shelter, food, water, electricity, and medical care during and after extreme weather and disasters</div></div>
 
@@ -78,8 +78,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>c.<span className='indent'/><div className='textbox'>Add procedures for sorting and diverting disaster debris.</div></div>
 
-      <h2>Publicly Owned Utilities</h2>
-      <p>The private sector is historically terrible at moving whole industries over to new technologies, even when the old tech is harmful and inefficient. To switch over to 100% renewable energy sources as fast as the threat of climate change demands, the city of Dallas needs to take public control of our electric utility. Publicly owned utilities and community-based microgrids aid in both democratizing the energy system and in making the overall grid more resilient — an important development as the city of Dallas is expected to face more extreme weather patterns in the upcoming years. Access to electricity can be a matter of life and death, particularly for elderly or disabled people who use breathing machines and other life-sustaining devices: it should not be left in the hands of unaccountable private owners who can cut service at will.</p>
+      <h2 id='public-utilities'>Publicly Owned Utilities</h2>
+      {/* <p>The private sector is historically terrible at moving whole industries over to new technologies, even when the old tech is harmful and inefficient. To switch over to 100% renewable energy sources as fast as the threat of climate change demands, the city of Dallas needs to take public control of our electric utility. Publicly owned utilities and community-based microgrids aid in both democratizing the energy system and in making the overall grid more resilient — an important development as the city of Dallas is expected to face more extreme weather patterns in the upcoming years. Access to electricity can be a matter of life and death, particularly for elderly or disabled people who use breathing machines and other life-sustaining devices: it should not be left in the hands of unaccountable private owners who can cut service at will.</p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Transition to 100% community-wide renewable electricity by 2030</div></div>
 
@@ -95,8 +95,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>b.<span className='indent'/><div className='textbox'>Ensure affected workers are guaranteed a just transition through job recertification programs.</div></div>
 
-      <h2>Sustainable Construction and Retrofitting</h2>
-      <p>From Architecture 2030: “The world is currently undergoing the largest wave of urban growth in human history. More than half of the global population is now concentrated in urban areas, and by 2060 two thirds of the expected population of 10 billion will live in cities.” Buildings and their construction together account for 36 percent of global energy use and 39 percent of energy-related carbon dioxide emissions annually. As the city of Dallas is expected to grow, it has the opportunity to design its new development to be net-zero from the start, and retrofit .</p>
+      <h2 id='sustainable-construction'>Sustainable Construction and Retrofitting</h2>
+      {/* <p>From Architecture 2030: “The world is currently undergoing the largest wave of urban growth in human history. More than half of the global population is now concentrated in urban areas, and by 2060 two thirds of the expected population of 10 billion will live in cities.” Buildings and their construction together account for 36 percent of global energy use and 39 percent of energy-related carbon dioxide emissions annually. As the city of Dallas is expected to grow, it has the opportunity to design its new development to be net-zero from the start, and retrofit .</p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Make all buildings fully electric</div></div>
 
@@ -114,8 +114,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>d.<span className='indent'/><div className='textbox'>Conduct energy efficiency retrofits and remediate unhealthy conditions in all public housing.</div></div>
 
-      <h2>Rewilding and Public Spaces </h2>
-      <p>Climate change is a result of the disruption of Earth’s water and carbon cycles through the steady deforestation and urbanization pursued through conventional development. When natural habitats like forests, swamp lands, peat lands and prairies are removed, water vapor becomes trapped in the upper atmosphere, amplifying other greenhouse gases. In order to restore both the carbon and water cycle, a massive “rewilding” effort must take place. The current predominant mentality in society that shapes our economic policies is that humans are separate from nature, which prevents us from understanding the interdependence between us and the natural world. If we can redefine ourselves as a keystone species within the ecosystem, we can then design policies that weave human society and nature together in a mutually beneficial way- that will ultimately be the key to sustaining civilization in the years to come. </p>
+      <h2 id='rewilding'>Rewilding and Public Spaces </h2>
+      {/* <p>Climate change is a result of the disruption of Earth’s water and carbon cycles through the steady deforestation and urbanization pursued through conventional development. When natural habitats like forests, swamp lands, peat lands and prairies are removed, water vapor becomes trapped in the upper atmosphere, amplifying other greenhouse gases. In order to restore both the carbon and water cycle, a massive “rewilding” effort must take place. The current predominant mentality in society that shapes our economic policies is that humans are separate from nature, which prevents us from understanding the interdependence between us and the natural world. If we can redefine ourselves as a keystone species within the ecosystem, we can then design policies that weave human society and nature together in a mutually beneficial way- that will ultimately be the key to sustaining civilization in the years to come. </p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Regenerate and protect watersheds in Dallas</div></div>
 
@@ -137,8 +137,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>b.<span className='indent'/><div className='textbox'>Ban the use of dangerous pesticides and herbicides throughout the city.</div></div>
 
-      <h2>Green and Accessible Transportation </h2>
-      <p>The U.S. transportation sector accounts for nearly thirty percent of global greenhouse gas emissions. In addition, a lack of access to transit exacerbates economic inequality- making it extremely difficult for those without cars to access basic necessities like the workplace, grocery store, or doctor’s office. Transportation should be a human right. Establishing a free, accessible, and expanded public transit system would enable residents of Dallas to opt out of single occupancy vehicles, improve air quality, and make Dallas an easily navigable city for all residents. </p>
+      <h2 id='green-transportation'>Green and Accessible Transportation </h2>
+      {/* <p>The U.S. transportation sector accounts for nearly thirty percent of global greenhouse gas emissions. In addition, a lack of access to transit exacerbates economic inequality- making it extremely difficult for those without cars to access basic necessities like the workplace, grocery store, or doctor’s office. Transportation should be a human right. Establishing a free, accessible, and expanded public transit system would enable residents of Dallas to opt out of single occupancy vehicles, improve air quality, and make Dallas an easily navigable city for all residents. </p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Reform DART to support riders above developers through resolutions and board appointments</div></div>
 
@@ -182,8 +182,8 @@ const Platform = props => {
       <br />
       <h2>Public & Private Consumption</h2>
 
-      <h2>Resilient, Sustainable, and Just Food System</h2>
-      <p>Intentionally designing where and how food is made poses incredible opportunities for both social and environmental benefits. Creating a network of locally sourced, community owned, and regeneratively grown food would empower residents to grow and have access to fresh produce, eliminating food deserts and improving health, while simultaneously sequestering carbon back into the soil and plant root system. </p>
+      <h2 id='food-system'>Resilient, Sustainable, and Just Food System</h2>
+      {/* <p>Intentionally designing where and how food is made poses incredible opportunities for both social and environmental benefits. Creating a network of locally sourced, community owned, and regeneratively grown food would empower residents to grow and have access to fresh produce, eliminating food deserts and improving health, while simultaneously sequestering carbon back into the soil and plant root system. </p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Support food producers and businesses growing or sourcing local and regenerative foods</div></div>
 
@@ -223,8 +223,8 @@ const Platform = props => {
 
       <div className='sub'><span className='indent'/><span className='indent'/><span className='indent'/>d.<span className='indent'/><div className='textbox'>Create a lease program for city owned land wherein community members can apply to lease lots for food production.</div></div>
 
-      <h2>Zero Waste </h2>
-      <p>Only 9% of the plastic ever made has been recycled, and nearly 40% of landfill waste is organic material that emits methane- a greenhouse gas 30 times more potent than carbon dioxide. Not only is creating waste unsustainable in a world with finite resources, it is also contributing to the climate crisis. The city of Dallas can shift away from the current linear economy and embrace a circular economic model by adopting a comprehensive zero waste program. Waste is not inevitable, it is simply a design flaw.</p>
+      <h2 id='zero-waste'>Zero Waste </h2>
+      {/* <p>Only 9% of the plastic ever made has been recycled, and nearly 40% of landfill waste is organic material that emits methane- a greenhouse gas 30 times more potent than carbon dioxide. Not only is creating waste unsustainable in a world with finite resources, it is also contributing to the climate crisis. The city of Dallas can shift away from the current linear economy and embrace a circular economic model by adopting a comprehensive zero waste program. Waste is not inevitable, it is simply a design flaw.</p> */}
       <br />
       <div className='sub'><span className='indent'/>1.<span className='indent'/><div className='textbox'>Raise labor standards for all sanitation workers</div></div>
 

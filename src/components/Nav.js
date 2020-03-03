@@ -25,7 +25,9 @@ const NavBox = styled.nav`
     text-decoration: none;
     color: ${green};
     font-family: 'Source Sans Pro', sans-serif;
-
+    &:hover {
+      font-weight: bold;
+    }
   }
   .activeNav {
     font-weight: bold;
