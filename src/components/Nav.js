@@ -10,6 +10,7 @@ const Nav = props => {
       <NavLink to='/about' activeClassName='activeNav'>ABOUT</NavLink>
       <NavLink to='/platform' activeClassName='activeNav'>PLATFORM</NavLink>
       <NavLink to='/join' activeClassName='activeNav'>JOIN US</NavLink>
+      <NavLink to='/events' activeClassName='activeNav'>EVENTS</NavLink>
     </NavBox>
   )
 }

@@ -6,6 +6,7 @@ import Landing from './components/Landing';
 import Platform from './components/Platform';
 import Background from './components/Background';
 import Join from './components/Join';
+import Events from './components/Events';
 import styled from 'styled-components';
 import {green, white} from './components/Colors';
 import { Route } from 'react-router-dom';
@@ -35,6 +36,7 @@ export default class App extends Component {
           <Route path='/platform' component={Platform} />
           <Route path='/join' component={Join} />
           <Route path='/about' component={Background} />
+          <Route path='/events' component={Events} />
         </div>
       </AppBox>
     );
