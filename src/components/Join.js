@@ -8,7 +8,7 @@ import gntx from '../img/square/gntx.png';
 import jwj from '../img/square/jwj.png';
 import nttr from '../img/square/nttr.png';
 import sunrise from '../img/square/sunrise.png';
-import tce from '../img/square/tce.png';
+import tce from '../img/square/tce2.png';
 import vfp from '../img/square/vfp.png';
 
 const orgPics = [dsaImg, treeFiddy, dga, gntx, jwj, nttr, sunrise, tce, vfp];
@@ -172,12 +172,12 @@ padding: 2rem;
   	flex-wrap: wrap;
   	justify-content: space-around;
 	}
-	// img {
-	// 	@media(max-width: 640px){
-	// 		width: 20%;
-	// 		height: 20%;
-  //   }
-	// }
+	img {
+		@media(max-width: 640px){
+			width: 30%;
+			height: 30%;
+    }
+	}
 `
 
 export default Join;
