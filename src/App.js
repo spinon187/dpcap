@@ -10,37 +10,58 @@ import Events from './components/Events';
 import styled from 'styled-components';
 import {green, white} from './components/Colors';
 import { Route } from 'react-router-dom';
+import BurgerMenu from 'react-burger-menu'
+import {NavLink} from 'react-router-dom';
 
 
 export default class App extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      
-    }
-  }
+	constructor(props){
+		super(props);
+		this.state = {
+			currentMenu: 'slide',
+      		side: 'right'
+		}
+	}
 
-  render() {
-    return (
-      <AppBox>
-        <header>
-          <div>
-            <h1>DPCAP</h1>
-            <h2>Dallas People's Climate Action Plan</h2>
-          </div>
-          <Nav />
-        </header>
-        
-        <div className='body-box'>
-          <Route exact path='/' component={Landing}/>
-          <Route path='/platform' component={Platform} />
-          <Route path='/join' component={Join} />
-          <Route path='/about' component={Background} />
-          <Route path='/events' component={Events} />
-        </div>
-      </AppBox>
-    );
-  }
+	getMenu() {
+		const Menu = BurgerMenu[this.state.currentMenu];
+
+		return (
+		  <Nav wait={20} side={this.state.side}>
+		    <Menu id={this.state.currentMenu} outerContainerId={'outer-container'} right={this.state.side === 'right'}>
+		      <NavLink exact to ='/' activeClassName='activeNav'>HOME</NavLink>
+		      <NavLink exact to ='/about' activeClassName='activeNav'>ABOUT</NavLink>
+		      <NavLink exact to ='/platform' activeClassName='activeNav'>PLATFORM</NavLink>
+		      <NavLink exact to ='/join' activeClassName='activeNav'>JOIN US</NavLink>
+		      <NavLink exact to ='/events' activeClassName='activeNav'>EVENTS</NavLink>
+		    </Menu>
+		  </Nav>
+		);
+	}
+
+	render() {
+		return (
+		  <AppBox id="outer-container" style={{height: '100%'}}>
+		    <header>
+		      <div>
+		        <h1>DPCAP</h1>
+		        <h2>Dallas People's Climate Action Plan</h2>
+		      </div>
+		      <div className = "hamburgler">
+		      	{this.getMenu()}
+		      </div>
+		    </header>
+		    
+		    <div className='body-box'>
+		      <Route exact path='/' component={Landing}/>
+		      <Route path='/platform' component={Platform} />
+		      <Route path='/join' component={Join} />
+		      <Route path='/about' component={Background} />
+		      <Route path='/events' component={Events} />
+		    </div>
+		  </AppBox>
+		);
+		}
 }
 
 
@@ -111,4 +132,71 @@ const AppBox = styled.div`
       padding-top: 0;
     }
   }
+
+
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  left: 36px;
+  top: 36px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #373a47;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
 `
