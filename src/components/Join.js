@@ -76,7 +76,7 @@ const Join = props => {
     	<br />
     	</div>
     	<h1>Join Us</h1>
-    	<div className="joinusblock">
+    	<div id="contact" className="joinusblock">
 	    	<div>
 		    	<h2>As a Volunteer</h2>
 		    	<p>

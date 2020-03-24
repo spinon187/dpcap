@@ -1,1 +1,1 @@
-export const green = '#6bb67b', gray = '#d9d9d9', white = '#ffffff';
+export const green = '#6bb67b', gray = '#d9d9d9', white = '#ffffff', blue = "#437c90";
