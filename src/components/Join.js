@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import {green, white, gray} from './Colors';
 import dsaImg from '../img/square/dsantx_logo.png';
-import treeFiddy from '../img/square/dallas350.svg';
+// import treeFiddy from '../img/square/dallas350.svg';
 import dga from '../img/square/dga.png';
 import gntx from '../img/square/gntx.png';
 import jwj from '../img/square/jwj.png';
@@ -11,7 +11,7 @@ import sunrise from '../img/square/sunrise.png';
 import tce from '../img/square/tce2.png';
 import vfp from '../img/square/vfp.png';
 
-const orgPics = [dsaImg, treeFiddy, dga, gntx, jwj, nttr, sunrise, tce, vfp];
+const orgPics = [dsaImg, dga, gntx, jwj, nttr, sunrise, tce, vfp];
 
 var orgs = []
 for (var j = 0; j<orgPics.length; j++){
